@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Plan your next Silk Route Café order."
+    />
+    <title>Order Online | Silk Route Café</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement-bar">
+      <p>Good coffee. Good company. Every day.</p>
+      <a href="shop.html">Explore the shop</a>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Silk Route Café home">
+        Silk Route Café logo
+      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+        <a href="shop.html">Shop</a>
+        <a href="index.html#menu">Menu</a>
+        <a href="index.html#about">About</a>
+      </nav>
+      <div class="header-actions">
+        <a class="icon-link" href="account.html" aria-label="Your account">
+          <svg class="stroke-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="7" r="4"></circle>
+            <path d="M4 21c0-4.1 3.6-7 8-7s8 2.9 8 7"></path>
+          </svg>
+        </a>
+        <a class="icon-link" href="shop.html#products" aria-label="Browse menu">
+          <svg class="stroke-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10.5" cy="10.5" r="6.5"></circle>
+            <path d="m16 16 5 5"></path>
+          </svg>
+        </a>
+        <a class="icon-link bag-link" href="bag.html" aria-label="Shopping bag">
+          <svg class="stroke-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 8h16l-1 13H5L4 8Z"></path>
+            <path d="M8 8V6a4 4 0 0 1 8 0v2"></path>
+          </svg>
+          <span class="bag-count" data-bag-count hidden></span>
+        </a>
+        <span class="region-icon" role="img" aria-label="Zambia">
+          <svg class="zambia-flag" viewBox="0 0 60 40" aria-hidden="true">
+            <rect width="60" height="40" fill="#198a00"></rect>
+            <path d="M39 10 44 5l4 2 5-3 3 3-2 7-5-2-4 4-3-3-5 1 1-3 4-1Z" fill="#ef7d00"></path>
+            <rect x="43" y="21" width="4" height="19" fill="#de2010"></rect>
+            <rect x="48" y="21" width="4" height="19" fill="#000"></rect>
+            <rect x="53" y="21" width="4" height="19" fill="#ef7d00"></rect>
+          </svg>
+          <svg class="region-chevron" viewBox="0 0 12 12" aria-hidden="true">
+            <path d="m2 4 4 4 4-4"></path>
+          </svg>
+        </span>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero" aria-labelledby="order-heading">
+        <div class="page-hero-inner">
+          <p class="page-eyebrow">Silk Route Café / Order online</p>
+          <h1 id="order-heading">Your next café favourite starts here.</h1>
+          <p>We’re getting online ordering ready. For now, explore the menu and save your favourites to your bag.</p>
+        </div>
+      </section>
+
+      <section class="page-shell order-preview" aria-labelledby="order-preview-heading">
+        <div class="preview-card">
+          <p class="page-eyebrow">A note before you order</p>
+          <h2 id="order-preview-heading">Online ordering is coming soon.</h2>
+          <p>
+            Your bag works as a preview, but order submission and payment are not connected yet.
+            No order or payment will be sent from this page.
+          </p>
+          <div class="page-actions">
+            <a class="button button-primary" href="shop.html">Browse the shop</a>
+            <a class="button button-outline" href="bag.html">Review your bag</a>
+          </div>
+        </div>
+        <div class="order-steps" aria-label="How ordering will work">
+          <article>
+            <span>01</span>
+            <h3>Choose a favourite</h3>
+            <p>Browse the café collection.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Add it to your bag</h3>
+            <p>Your selection stays saved in this browser.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Order with confidence</h3>
+            <p>Checkout will be enabled once fulfilment is set up.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <a href="index.html">Silk Route Café</a>
+      <span>Thoughtfully brewed in Zambia.</span>
+      <a href="index.html#contact">Contact us</a>
+    </footer>
+  </body>
+</html>

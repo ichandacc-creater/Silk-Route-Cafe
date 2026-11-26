@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Visit Silk Route Café for a lovely cup and a taste of something special."
+    />
+    <title>Silk Route Café</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement-bar">
+      <p>Good coffee. Good company. Every day.</p>
+      <a href="order.html">Order online</a>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Silk Route Café home">
+        Silk Route Café logo
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+        <a href="shop.html">Shop</a>
+        <a href="index.html#menu">Menu</a>
+        <a href="index.html#about">About</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="icon-link" href="account.html" aria-label="Your account">
+          <svg class="stroke-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="7" r="4"></circle>
+            <path d="M4 21c0-4.1 3.6-7 8-7s8 2.9 8 7"></path>
+          </svg>
+        </a>
+        <a class="icon-link" href="shop.html#products" aria-label="Browse menu">
+          <svg class="stroke-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10.5" cy="10.5" r="6.5"></circle>
+            <path d="m16 16 5 5"></path>
+          </svg>
+        </a>
+        <a class="icon-link bag-link" href="bag.html" aria-label="Shopping bag">
+          <svg class="stroke-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 8h16l-1 13H5L4 8Z"></path>
+            <path d="M8 8V6a4 4 0 0 1 8 0v2"></path>
+          </svg>
+          <span class="bag-count" data-bag-count hidden></span>
+        </a>
+        <span class="region-icon" role="img" aria-label="Zambia">
+          <svg class="zambia-flag" viewBox="0 0 60 40" aria-hidden="true">
+            <rect width="60" height="40" fill="#198a00"></rect>
+            <path d="M39 10 44 5l4 2 5-3 3 3-2 7-5-2-4 4-3-3-5 1 1-3 4-1Z" fill="#ef7d00"></path>
+            <rect x="43" y="21" width="4" height="19" fill="#de2010"></rect>
+            <rect x="48" y="21" width="4" height="19" fill="#000"></rect>
+            <rect x="53" y="21" width="4" height="19" fill="#ef7d00"></rect>
+          </svg>
+          <svg class="region-chevron" viewBox="0 0 12 12" aria-hidden="true">
+            <path d="m2 4 4 4 4-4"></path>
+          </svg>
+        </span>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-heading">
+        <h1 id="hero-heading">
+          The best&nbsp; Café&nbsp; in town<br class="desktop-break" />
+          come taste why
+        </h1>
+        <div class="hero-image" role="img" aria-label="Silk Route Café featured image"></div>
+        <a class="scroll-cue" href="#menu">
+          Scroll for more
+          <svg viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M8 2v10m-4-4 4 4 4-4" />
+          </svg>
+        </a>
+      </section>
+
+      <section class="menu-intro" id="menu" aria-labelledby="menu-heading">
+        <div class="menu-intro-copy">
+          <p class="page-eyebrow">Silk Route Café / Menu</p>
+          <h2 id="menu-heading">Our Menu</h2>
+          <p>
+            From your first cup of the day to a little something sweet, find a
+            favourite to savour at your own pace.
+          </p>
+          <a class="button button-primary menu-intro-link" href="#menu-favourites">
+            Explore favourites
+          </a>
+        </div>
+        <div class="menu-intro-image" role="img" aria-label="Silk Route Café menu photography coming soon">
+          <span>Menu photography coming soon</span>
+        </div>
+      </section>
+
+      <section class="menu-products" id="menu-favourites" aria-labelledby="menu-favourites-heading">
+        <div class="menu-section-heading">
+          <p class="page-eyebrow">Made for your everyday ritual</p>
+          <h2 id="menu-favourites-heading">Café favourites</h2>
+        </div>
+        <div class="menu-products-grid">
+          <article class="shop-card menu-product">
+            <div class="shop-product-art menu-product-image" role="img" aria-label="House coffee photo coming soon">
+              <span>Photo coming soon</span>
+            </div>
+            <div class="shop-card-copy">
+              <p class="product-category">Coffee</p>
+              <h3>House Coffee</h3>
+              <p>A smooth, comforting cup for any time of day.</p>
+              <a class="button button-primary" href="order.html">Order Now</a>
+            </div>
+          </article>
+          <article class="shop-card menu-product">
+            <div class="shop-product-art menu-product-image" role="img" aria-label="Silk Route latte photo coming soon">
+              <span>Photo coming soon</span>
+            </div>
+            <div class="shop-card-copy">
+              <p class="product-category">Coffee</p>
+              <h3>Silk Route Latte</h3>
+              <p>Espresso and softly steamed milk, made to savour.</p>
+              <a class="button button-primary" href="order.html">Order Now</a>
+            </div>
+          </article>
+          <article class="shop-card menu-product">
+            <div class="shop-product-art menu-product-image" role="img" aria-label="Cappuccino photo coming soon">
+              <span>Photo coming soon</span>
+            </div>
+            <div class="shop-card-copy">
+              <p class="product-category">Coffee</p>
+              <h3>Cappuccino</h3>
+              <p>A classic espresso topped with a cloud of milk foam.</p>
+              <a class="button button-primary" href="order.html">Order Now</a>
+            </div>
+          </article>
+          <article class="shop-card menu-product">
+            <div class="shop-product-art menu-product-image" role="img" aria-label="Spiced chai photo coming soon">
+              <span>Photo coming soon</span>
+            </div>
+            <div class="shop-card-copy">
+              <p class="product-category">Tea</p>
+              <h3>Spiced Chai</h3>
+              <p>Warming tea with fragrant spices and a gentle sweetness.</p>
+              <a class="button button-primary" href="order.html">Order Now</a>
+            </div>
+          </article>
+          <article class="shop-card menu-product">
+            <div class="shop-product-art menu-product-image" role="img" aria-label="Iced coffee photo coming soon">
+              <span>Photo coming soon</span>
+            </div>
+            <div class="shop-card-copy">
+              <p class="product-category">Coffee</p>
+              <h3>Iced Coffee</h3>
+              <p>Silky coffee poured over ice for a refreshing pause.</p>
+              <a class="button button-primary" href="order.html">Order Now</a>
+            </div>
+          </article>
+          <article class="shop-card menu-product">
+            <div class="shop-product-art menu-product-image" role="img" aria-label="Fresh bakes photo coming soon">
+              <span>Photo coming soon</span>
+            </div>
+            <div class="shop-card-copy">
+              <p class="product-category">From the bakery</p>
+              <h3>Fresh Bakes</h3>
+              <p>A little something sweet to go with your favourite cup.</p>
+              <a class="button button-primary" href="order.html">Order Now</a>
+            </div>
+          </article>
+        </div>
+        <a class="menu-browse-link" href="shop.html#products">Explore the full café selection <span aria-hidden="true">→</span></a>
+      </section>
+
+      <section class="order-section" id="order" aria-label="Order online">
+        <div class="order-panel">
+          <a class="button button-light" href="order.html">Order Now</a>
+        </div>
+      </section>
+
+      <section class="about-section" id="about" aria-labelledby="about-heading">
+        <div class="about-image" role="img" aria-label="Inside Silk Route Café"></div>
+        <div class="about-copy">
+          <h2 class="visually-hidden" id="about-heading">About Silk Route Café</h2>
+          <p>
+            At Silk Route Café, we believe there is always time to pause, share
+            a delicious cup, and enjoy the company of friends. Come in for a
+            comforting favourite or discover something new.
+          </p>
+          <div class="about-actions">
+            <a class="button button-outline" href="#contact">Contact Us</a>
+            <a class="button button-primary" href="#contact">Our team</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="news-section" id="news" aria-labelledby="news-heading">
+        <div class="news-section-header">
+          <p class="page-eyebrow">From our café</p>
+          <h2 id="news-heading">What's New</h2>
+          <p class="news-intro">
+            A little collection of café updates, new favourites and moments to share.
+          </p>
+        </div>
+        <div class="news-cards">
+          <article class="news-card news-card-feature">
+            <div class="news-card-image" role="img" aria-label="Café update photo coming soon">
+              <span>Photo coming soon</span>
+            </div>
+            <div class="news-card-copy">
+              <p class="news-card-label">Coming soon</p>
+              <h3>A little something new</h3>
+              <p>Our latest café news and seasonal favourites will be shared here.</p>
+              <a class="news-card-link" href="shop.html#products">Explore café favourites <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="news-card news-card-note">
+            <div class="news-card-image" role="img" aria-label="Silk Route Café story photo coming soon">
+              <span>Photo coming soon</span>
+            </div>
+            <div class="news-card-copy">
+              <p class="news-card-label">At Silk Route</p>
+              <h3>Good things to come</h3>
+              <p>This space is ready for stories and updates from the café.</p>
+              <a class="news-card-link" href="#menu">Explore the menu <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <nav class="footer-navigation" aria-label="Footer navigation">
+        <div class="footer-column" id="footer-about">
+          <h2>About us</h2>
+          <a href="#menu">Our coffees</a>
+          <a href="#about">Our story</a>
+          <a href="#about">Sustainability</a>
+          <a href="#about">Silk Route Foundation</a>
+        </div>
+        <div class="footer-column" id="contact">
+          <h2>Contact us</h2>
+          <a href="#contact">FAQs</a>
+          <a href="#contact">Contact us</a>
+          <a href="#contact">Press</a>
+          <a href="#contact">Careers</a>
+          <span id="location" class="location-anchor"></span>
+        </div>
+      </nav>
+
+      <div class="footer-bottom">
+        <div class="footer-legal">
+          <a href="#privacy" id="privacy">Privacy Policy</a>
+          <span>Copyrights reserved</span>
+          <div class="social-icons" aria-label="Social media">
+            <span class="social-icon facebook" role="img" aria-label="Facebook">f</span>
+            <span class="social-icon" role="img" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <circle class="instagram-dot" cx="18" cy="6" r="1"></circle>
+              </svg>
+            </span>
+            <span class="social-icon youtube" role="img" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8ZM9.7 15.3V8.7l5.8 3.3-5.8 3.3Z"></path>
+              </svg>
+            </span>
+            <span class="social-icon tiktok" role="img" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 3h3c.2 1.8 1.4 3.1 3.5 3.4v3.1A8.3 8.3 0 0 1 17 8.2v6.2a6 6 0 1 1-5.8-6v3.2a2.8 2.8 0 1 0 2.8 2.8V3Z"></path>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="footer-brand" aria-label="Silk Route Café logo">
+          Silk Route<br />Café<br />logo symbol
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
