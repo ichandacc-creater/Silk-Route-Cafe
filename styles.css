@@ -182,6 +182,7 @@ main > section[id],
 
 .hero-copy {
   max-width: 560px;
+  animation: hero-rise 700ms ease-out both;
 }
 
 .hero-eyebrow {
@@ -215,6 +216,7 @@ main > section[id],
   aspect-ratio: 1.33;
   border-radius: 32px;
   place-items: center;
+  animation: hero-rise 800ms 120ms ease-out both;
   background:
     radial-gradient(ellipse at 50% 43%, rgb(255 255 255 / 78%) 0 16%, transparent 16.5%),
     radial-gradient(ellipse at 50% 58%, rgb(255 255 255 / 28%) 0 32%, transparent 32.5%),
@@ -223,6 +225,18 @@ main > section[id],
   font-size: 13px;
   letter-spacing: 0.04em;
   text-align: center;
+}
+
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .scroll-cue {
@@ -1327,18 +1341,6 @@ main > section[id],
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    transition-duration: 0.01ms !important;
-  }
-}
-
 .icon-link {
   position: relative;
 }
@@ -1565,12 +1567,19 @@ main > section[id],
   min-height: 220px;
   aspect-ratio: 1.35;
   place-items: center;
+  transition: transform 280ms ease;
   background:
     radial-gradient(ellipse at 50% 43%, rgb(255 255 255 / 75%) 0 13%, transparent 13.5%),
     var(--pink-gradient);
   color: #805274;
   font-size: 13px;
   letter-spacing: 0.04em;
+}
+
+@media (hover: hover) {
+  .shop-card:hover .shop-product-art {
+    transform: scale(1.035);
+  }
 }
 
 .shop-card-copy {
@@ -2016,5 +2025,24 @@ main > section[id],
   .bag-line-controls {
     justify-content: flex-start;
     flex-wrap: wrap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .shop-card:hover,
+  .shop-card:hover .shop-product-art {
+    transform: none;
   }
 }
