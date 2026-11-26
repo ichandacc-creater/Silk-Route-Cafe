@@ -100,93 +100,147 @@
           </label>
         </div>
 
-        <p class="cart-feedback" data-cart-feedback aria-live="polite"></p>
-        <div class="shop-grid">
-          <article class="shop-card" data-product-card data-search="house coffee blend">
-            <div class="shop-product-art" role="img" aria-label="House coffee photo coming soon">
-              <span>Photo coming soon</span>
-            </div>
-            <div class="shop-card-copy">
-              <p class="product-category">Coffee</p>
-              <h3>House Coffee</h3>
-              <p>A smooth, comforting cup for any time of day.</p>
-              <button class="button button-primary" type="button" data-add-to-bag="house-coffee">
-                Add to bag
-              </button>
-            </div>
-          </article>
+        <div class="shop-catalogue">
+          <nav class="shop-categories" aria-label="Menu categories">
+            <p class="shop-category-label">Browse by</p>
+            <p class="shop-category-group">Drinks</p>
+            <button class="shop-category-button" type="button" data-category-filter="all" aria-pressed="true">
+              All favourites
+            </button>
+            <button class="shop-category-button" type="button" data-category-filter="coffee" aria-pressed="false">
+              Coffee
+            </button>
+            <button class="shop-category-button" type="button" data-category-filter="tea" aria-pressed="false">
+              Tea
+            </button>
+            <p class="shop-category-group">From the bakery</p>
+            <button class="shop-category-button" type="button" data-category-filter="bakery" aria-pressed="false">
+              Bakes &amp; treats
+            </button>
+          </nav>
 
-          <article class="shop-card" data-product-card data-search="silk route latte coffee">
-            <div class="shop-product-art" role="img" aria-label="Silk Route latte photo coming soon">
-              <span>Photo coming soon</span>
-            </div>
-            <div class="shop-card-copy">
-              <p class="product-category">Coffee</p>
-              <h3>Silk Route Latte</h3>
-              <p>Espresso and softly steamed milk, made to savour.</p>
-              <button class="button button-primary" type="button" data-add-to-bag="silk-route-latte">
-                Add to bag
-              </button>
-            </div>
-          </article>
+          <div class="shop-results">
+            <p class="cart-feedback" data-cart-feedback aria-live="polite"></p>
+            <div class="shop-grid">
+              <article
+                class="shop-card"
+                data-product-card
+                data-product-category="coffee"
+                data-search="house coffee blend"
+              >
+                <div class="shop-product-art" role="img" aria-label="House coffee photo coming soon">
+                  <span>Photo coming soon</span>
+                </div>
+                <div class="shop-card-copy">
+                  <p class="product-category">Coffee</p>
+                  <h3>House Coffee</h3>
+                  <p>A smooth, comforting cup for any time of day.</p>
+                  <button class="button button-primary" type="button" data-add-to-bag="house-coffee">
+                    Add to bag
+                  </button>
+                </div>
+              </article>
 
-          <article class="shop-card" data-product-card data-search="cappuccino coffee">
-            <div class="shop-product-art" role="img" aria-label="Cappuccino photo coming soon">
-              <span>Photo coming soon</span>
-            </div>
-            <div class="shop-card-copy">
-              <p class="product-category">Coffee</p>
-              <h3>Cappuccino</h3>
-              <p>A classic espresso topped with a cloud of milk foam.</p>
-              <button class="button button-primary" type="button" data-add-to-bag="cappuccino">
-                Add to bag
-              </button>
-            </div>
-          </article>
+              <article
+                class="shop-card"
+                data-product-card
+                data-product-category="coffee"
+                data-search="silk route latte coffee"
+              >
+                <div class="shop-product-art" role="img" aria-label="Silk Route latte photo coming soon">
+                  <span>Photo coming soon</span>
+                </div>
+                <div class="shop-card-copy">
+                  <p class="product-category">Coffee</p>
+                  <h3>Silk Route Latte</h3>
+                  <p>Espresso and softly steamed milk, made to savour.</p>
+                  <button class="button button-primary" type="button" data-add-to-bag="silk-route-latte">
+                    Add to bag
+                  </button>
+                </div>
+              </article>
 
-          <article class="shop-card" data-product-card data-search="spiced chai tea">
-            <div class="shop-product-art" role="img" aria-label="Spiced chai photo coming soon">
-              <span>Photo coming soon</span>
-            </div>
-            <div class="shop-card-copy">
-              <p class="product-category">Tea</p>
-              <h3>Spiced Chai</h3>
-              <p>Warming tea with fragrant spices and a gentle sweetness.</p>
-              <button class="button button-primary" type="button" data-add-to-bag="spiced-chai">
-                Add to bag
-              </button>
-            </div>
-          </article>
+              <article
+                class="shop-card"
+                data-product-card
+                data-product-category="coffee"
+                data-search="cappuccino coffee"
+              >
+                <div class="shop-product-art" role="img" aria-label="Cappuccino photo coming soon">
+                  <span>Photo coming soon</span>
+                </div>
+                <div class="shop-card-copy">
+                  <p class="product-category">Coffee</p>
+                  <h3>Cappuccino</h3>
+                  <p>A classic espresso topped with a cloud of milk foam.</p>
+                  <button class="button button-primary" type="button" data-add-to-bag="cappuccino">
+                    Add to bag
+                  </button>
+                </div>
+              </article>
 
-          <article class="shop-card" data-product-card data-search="iced coffee cold">
-            <div class="shop-product-art" role="img" aria-label="Iced coffee photo coming soon">
-              <span>Photo coming soon</span>
-            </div>
-            <div class="shop-card-copy">
-              <p class="product-category">Coffee</p>
-              <h3>Iced Coffee</h3>
-              <p>Silky coffee poured over ice for a refreshing pause.</p>
-              <button class="button button-primary" type="button" data-add-to-bag="iced-coffee">
-                Add to bag
-              </button>
-            </div>
-          </article>
+              <article
+                class="shop-card"
+                data-product-card
+                data-product-category="tea"
+                data-search="spiced chai tea"
+              >
+                <div class="shop-product-art" role="img" aria-label="Spiced chai photo coming soon">
+                  <span>Photo coming soon</span>
+                </div>
+                <div class="shop-card-copy">
+                  <p class="product-category">Tea</p>
+                  <h3>Spiced Chai</h3>
+                  <p>Warming tea with fragrant spices and a gentle sweetness.</p>
+                  <button class="button button-primary" type="button" data-add-to-bag="spiced-chai">
+                    Add to bag
+                  </button>
+                </div>
+              </article>
 
-          <article class="shop-card" data-product-card data-search="fresh bakes pastry">
-            <div class="shop-product-art" role="img" aria-label="Fresh bakes photo coming soon">
-              <span>Photo coming soon</span>
+              <article
+                class="shop-card"
+                data-product-card
+                data-product-category="coffee"
+                data-search="iced coffee cold"
+              >
+                <div class="shop-product-art" role="img" aria-label="Iced coffee photo coming soon">
+                  <span>Photo coming soon</span>
+                </div>
+                <div class="shop-card-copy">
+                  <p class="product-category">Coffee</p>
+                  <h3>Iced Coffee</h3>
+                  <p>Silky coffee poured over ice for a refreshing pause.</p>
+                  <button class="button button-primary" type="button" data-add-to-bag="iced-coffee">
+                    Add to bag
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="shop-card"
+                data-product-card
+                data-product-category="bakery"
+                data-search="fresh bakes pastry"
+              >
+                <div class="shop-product-art" role="img" aria-label="Fresh bakes photo coming soon">
+                  <span>Photo coming soon</span>
+                </div>
+                <div class="shop-card-copy">
+                  <p class="product-category">From the bakery</p>
+                  <h3>Fresh Bakes</h3>
+                  <p>A little something sweet to go with your favourite cup.</p>
+                  <button class="button button-primary" type="button" data-add-to-bag="fresh-bakes">
+                    Add to bag
+                  </button>
+                </div>
+              </article>
             </div>
-            <div class="shop-card-copy">
-              <p class="product-category">From the bakery</p>
-              <h3>Fresh Bakes</h3>
-              <p>A little something sweet to go with your favourite cup.</p>
-              <button class="button button-primary" type="button" data-add-to-bag="fresh-bakes">
-                Add to bag
-              </button>
-            </div>
-          </article>
+            <p class="search-empty" data-search-empty hidden>
+              No café favourites match those filters.
+            </p>
+          </div>
         </div>
-        <p class="search-empty" data-search-empty hidden>No café favourites match that search.</p>
       </section>
 
       <section class="shop-bottom-promo">

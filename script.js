@@ -197,17 +197,43 @@ if (bagItems) {
 }
 
 const productSearch = document.querySelector("[data-product-search]");
-if (productSearch) {
-  productSearch.addEventListener("input", () => {
-    const searchTerm = productSearch.value.trim().toLowerCase();
-    const cards = [...document.querySelectorAll("[data-product-card]")];
-    let visibleCount = 0;
-    cards.forEach((card) => {
-      card.hidden = !card.dataset.search.includes(searchTerm);
-      if (!card.hidden) {
-        visibleCount += 1;
-      }
-    });
-    document.querySelector("[data-search-empty]").hidden = visibleCount > 0;
+const categoryFilters = [...document.querySelectorAll("[data-category-filter]")];
+let activeCategory = "all";
+
+const applyProductFilters = () => {
+  const searchTerm = productSearch ? productSearch.value.trim().toLowerCase() : "";
+  const cards = [...document.querySelectorAll("[data-product-card]")];
+  let visibleCount = 0;
+
+  cards.forEach((card) => {
+    const matchesCategory =
+      activeCategory === "all" || card.dataset.productCategory === activeCategory;
+    const matchesSearch = card.dataset.search.toLowerCase().includes(searchTerm);
+    card.hidden = !matchesCategory || !matchesSearch;
+    if (!card.hidden) {
+      visibleCount += 1;
+    }
   });
+
+  const emptyState = document.querySelector("[data-search-empty]");
+  if (emptyState) {
+    emptyState.hidden = visibleCount > 0;
+  }
+};
+
+if (productSearch) {
+  productSearch.addEventListener("input", applyProductFilters);
 }
+
+categoryFilters.forEach((filter) => {
+  filter.addEventListener("click", () => {
+    activeCategory = filter.dataset.categoryFilter;
+    categoryFilters.forEach((categoryFilter) => {
+      categoryFilter.setAttribute(
+        "aria-pressed",
+        String(categoryFilter === filter),
+      );
+    });
+    applyProductFilters();
+  });
+});
