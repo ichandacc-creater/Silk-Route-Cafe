@@ -352,6 +352,11 @@ main > section[id],
   line-height: 1.15;
 }
 
+.menu-cart-feedback {
+  width: min(1120px, 100%);
+  margin: -16px auto 16px;
+}
+
 .menu-products-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -624,27 +629,14 @@ main > section[id],
 }
 
 .news-card-image {
-  display: grid;
   width: 100%;
   min-height: 230px;
   aspect-ratio: 1.7;
-  place-items: center;
-  background:
-    radial-gradient(ellipse at 50% 43%, rgb(255 255 255 / 76%) 0 13%, transparent 13.5%),
-    radial-gradient(ellipse at 50% 54%, rgb(255 255 255 / 25%) 0 28%, transparent 28.5%),
-    var(--pink-gradient);
-  color: #805274;
-  font-size: 13px;
-  letter-spacing: 0.04em;
-  text-align: center;
+  background: url("assets/a%20little%20something%20new.jpg") center / cover no-repeat;
 }
 
 .news-card-note .news-card-image {
-  background:
-    radial-gradient(ellipse at 50% 43%, rgb(255 255 255 / 76%) 0 13%, transparent 13.5%),
-    radial-gradient(ellipse at 50% 54%, rgb(255 255 255 / 25%) 0 28%, transparent 28.5%),
-    var(--magenta-gradient);
-  color: #fff;
+  background: url("assets/Let%20Good.jpg") center / cover no-repeat;
 }
 
 .news-card-copy {
@@ -1600,7 +1592,7 @@ main > section[id],
 }
 
 .product-photo-house-coffee {
-  background: url("assets/.%20House%20Coffee.webp") center / cover no-repeat;
+  background: url("assets/House%20Coffee.webp") center / cover no-repeat;
 }
 
 .product-photo-silk-route-latte {

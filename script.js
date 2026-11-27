@@ -2,6 +2,7 @@ const menuToggle = document.querySelector(".menu-toggle");
 const navigation = document.querySelector("#primary-navigation");
 const headerActions = document.querySelector(".header-actions");
 const cartStorageKey = "silk-route-bag";
+const whatsappPhoneNumber = "260979699259";
 
 const products = {
   "house-coffee": "House Coffee",
@@ -10,6 +11,21 @@ const products = {
   "spiced-chai": "Spiced Chai",
   "iced-coffee": "Iced Coffee",
   "fresh-bakes": "Fresh Bakes",
+};
+
+const createWhatsAppOrderUrl = (cart) => {
+  const itemLines = cart.map(
+    ({ id, quantity }) => `- ${quantity} x ${products[id]}`,
+  );
+  const message = [
+    "Hello Silk Route Café! I'd like to place an order:",
+    "",
+    ...itemLines,
+    "",
+    "Please confirm the total price and collection details. Thank you!",
+  ].join("\n");
+
+  return `https://wa.me/${whatsappPhoneNumber}?text=${encodeURIComponent(message)}`;
 };
 
 menuToggle.addEventListener("click", () => {
@@ -82,6 +98,16 @@ const renderBag = (cart) => {
 
   const count = cart.reduce((total, item) => total + item.quantity, 0);
   document.querySelector("[data-bag-total-items]").textContent = String(count);
+
+  const whatsappOrderLink = document.querySelector("[data-whatsapp-order]");
+  if (whatsappOrderLink) {
+    whatsappOrderLink.hidden = isEmpty;
+    if (isEmpty) {
+      whatsappOrderLink.removeAttribute("href");
+    } else {
+      whatsappOrderLink.href = createWhatsAppOrderUrl(cart);
+    }
+  }
 
   for (const item of cart) {
     const row = document.createElement("article");
