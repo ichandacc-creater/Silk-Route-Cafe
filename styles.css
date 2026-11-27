@@ -217,14 +217,7 @@ main > section[id],
   border-radius: 32px;
   place-items: center;
   animation: hero-rise 800ms 120ms ease-out both;
-  background:
-    radial-gradient(ellipse at 50% 43%, rgb(255 255 255 / 78%) 0 16%, transparent 16.5%),
-    radial-gradient(ellipse at 50% 58%, rgb(255 255 255 / 28%) 0 32%, transparent 32.5%),
-    var(--pink-gradient);
-  color: #805274;
-  font-size: 13px;
-  letter-spacing: 0.04em;
-  text-align: center;
+  background: url("assets/cafe-coffee.jpg") center / cover no-repeat;
 }
 
 @keyframes hero-rise {
@@ -337,14 +330,7 @@ main > section[id],
   place-items: center;
   overflow: hidden;
   border-radius: 28px;
-  background:
-    radial-gradient(ellipse at 50% 43%, rgb(255 255 255 / 76%) 0 13%, transparent 13.5%),
-    radial-gradient(ellipse at 50% 54%, rgb(255 255 255 / 25%) 0 28%, transparent 28.5%),
-    var(--magenta-gradient);
-  color: #fff;
-  font-size: 13px;
-  letter-spacing: 0.04em;
-  text-align: center;
+  background: url("assets/silk-route-latte.jpg") center / cover no-repeat;
 }
 
 .menu-products {
@@ -533,7 +519,7 @@ main > section[id],
   width: 100%;
   aspect-ratio: 1.32;
   border-radius: 42px;
-  background: var(--magenta-gradient);
+  background: url("assets/our%20story.jpg") center / cover no-repeat;
 }
 
 .about-copy {
@@ -1611,6 +1597,30 @@ main > section[id],
   color: #805274;
   font-size: 13px;
   letter-spacing: 0.04em;
+}
+
+.product-photo-house-coffee {
+  background: url("assets/.%20House%20Coffee.webp") center / cover no-repeat;
+}
+
+.product-photo-silk-route-latte {
+  background: url("assets/Silk%20Route%20Latte.webp") center / cover no-repeat;
+}
+
+.product-photo-spiced-chai {
+  background: url("assets/Spiced%20Chai.webp") center / cover no-repeat;
+}
+
+.product-photo-iced-coffee {
+  background: url("assets/Iced%20Coffe.jpg") center / cover no-repeat;
+}
+
+.product-photo-cappuccino {
+  background: url("assets/Cappuccino.jpg") center / cover no-repeat;
+}
+
+.product-photo-fresh-bakes {
+  background: url("assets/fresh%20bakes.jpg") center / cover no-repeat;
 }
 
 @media (hover: hover) {
